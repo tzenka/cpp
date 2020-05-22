@@ -1,0 +1,22 @@
+Sub Dodaj()
+    Dim a As Double, b As Double, c As Double
+    Dim delta As Double
+    
+    a = [a1]
+    b = [b1]
+    c = [c1]
+    delta = b * b - 4 * a * c
+    
+    If (delta < 0) Then
+        [d1] = "brak rozwiązań"
+        [e1] = ""
+    Else
+        If (delta = 0) Then
+            [d1] = -b / (2 * a)
+            [e1] = ""
+        Else
+            [d1] = (-b - Sqr(delta)) / (2 * a)
+            [e1] = (-b + Sqr(delta)) / (2 * a)
+        End If
+    End If
+End Sub
