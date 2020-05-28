@@ -17,7 +17,7 @@ Sub rownianie_kwadratowe()
             [e1] = ""
         Else
             [d1] = (-b - Sqr(d)) / (2 * a)
-            [e1] = (-b - Sqr(d)) / (2 * a)            
+            [e1] = (-b + Sqr(d)) / (2 * a)            
         End If
     End If
 End Sub
