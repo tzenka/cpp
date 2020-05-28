@@ -1,0 +1,19 @@
+Sub zad2()
+    Dim a As Double, b As Double, c As Double
+    Dim delta As Double
+    
+    a = [a1]
+    b = [b1]
+    If (a * a - a * b + b * b < 0) Then
+        MsgBox "liczba ujemna"
+    End If
+    If (a * a + a * b + b * b <= 0) Then
+        MsgBox "liczba ujemna lub dzielenie przez 0"
+    End If
+    c = (1 - Math.Sqr(a * a - a * b + b * b)) / (1 + Math.Sqr(a * a + a * b + b * b))
+    [c1] = c
+    
+End Sub
+
+
+

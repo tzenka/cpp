@@ -1,0 +1,24 @@
+Sub rownianie_kwadratowe()
+    Dim a As Double, b As Double, c As Double, d As Double
+    
+    a = [a1]
+    b = [b1]
+    c = [c1]
+    d = b * b - 4 * a * c
+    If (a = 0) Then
+        MsgBox "To nie jest równanie kwadratowe"
+    Else
+        d = b * b - 4 * a * c
+        If (d < 0) Then
+            MsgBox "nie ma rozwiązań"
+        Else
+            Dim x1 As Double
+            x1 = (-b - Sqr(d)) / (2 * a)
+            Dim x2 As Double
+            x2 = (-b - Sqr(d)) / (2 * a)            
+            [d1] = x1
+            [e1] = x2
+        End If
+    End If
+End Sub
+
