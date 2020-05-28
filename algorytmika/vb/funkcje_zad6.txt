@@ -8,7 +8,6 @@ Sub rownianie_kwadratowe()
     If (a = 0) Then
         MsgBox "To nie jest równanie kwadratowe"
     Else
-        d = b * b - 4 * a * c
         If (d < 0) Then
             MsgBox "nie ma rozwiązań"
         Else
