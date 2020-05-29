@@ -1,0 +1,8 @@
+Sub szereg()
+    Dim s As Double
+    Dim q As Double
+    q = 0.5
+    s = ActiveCell
+    ActiveCell.Offset(1, 0).Select
+    ActiveCell = q * s + 1
+End Sub
