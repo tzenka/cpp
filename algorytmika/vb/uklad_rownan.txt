@@ -1,0 +1,30 @@
+Sub uklad_rownan()
+    Dim a_1, b_1, c_1, a_2, b_2, c_2, w, wx, wy As Double
+    
+    a_1 = [a1]
+    b_1 = [b1]
+    c_1 = [c1]
+    
+    a_2 = [a2]
+    b_2 = [b2]
+    c_2 = [c2]
+    
+    [e1] = ""
+    [e2] = ""
+    [a5] = ""
+    
+    w = a_1 * b_2 - a_2 * b_1
+    wx = c_1 * b_2 - c_2 * b_1
+    wy = a_1 * c_2 - a_2 * c_1
+ 
+    If (w = 0 And wx = 0 And wy = 0) Then
+        [a5] = "nieskończenie wiele rozwiązań"
+        ElseIf (w = 0 And wx * wy <> 0) Then
+                [a5] = "brak rozwiązań"
+            End
+        Else
+            [e1] = wx / w
+            [e2] = wy / w
+        End If
+    End
+End Sub
