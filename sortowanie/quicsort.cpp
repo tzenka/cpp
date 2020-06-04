@@ -7,7 +7,14 @@
 
 using namespace std;
 
-void quicksort(int *t, int l, int p)
+void quicksort(int *t, int l, int p) {
+	if (p-l<=1) {
+		return ;
+	} else {
+		for (
+		
+	}
+}
 
 int main() {
 	int tab[100];
